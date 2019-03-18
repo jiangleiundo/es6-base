@@ -2,10 +2,10 @@
 
 ### 主要依赖包版本
 
-gulp@3.9.1
-webpack@3.12.0
-webpack-stream@3.2.0
-babel-loader@7
+- gulp@3.9.1
+- webpack@3.12.0
+- webpack-stream@3.2.0
+- babel-loader@7
 
 ### 使用方法：
 
