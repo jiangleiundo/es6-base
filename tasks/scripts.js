@@ -21,8 +21,8 @@ gulp.task('scripts', () => {
 
             }
         }))
-        .pipe(named())
-        .pipe(gulpWebpack({
+        .pipe(named()) // 重新命名刚才打开的文件
+        .pipe(gulpWebpack({ // 打包编译js文件
             module: {
                 rules: [{
                     test: /\.js$/, loader: 'babel-loader'
