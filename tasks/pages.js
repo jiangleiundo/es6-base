@@ -1,7 +1,7 @@
 /* 处理模板 */
 import gulp from 'gulp';
 import gulpif from 'gulp-if';
-import livereload from  'gulp-livereload';
+import livereload from 'gulp-livereload';
 import args from './util/args';
 
 gulp.task('pages', ()=> {

@@ -21,12 +21,12 @@ gulp.task('scripts', () => {
 
             }
         }))
-        .pipe(named()) // 重新命名刚才打开的文件
-        .pipe(gulpWebpack({ // 打包编译js文件
+        .pipe(named())
+        .pipe(gulpWebpack({
             module: {
-                rules: [{
-                    test: /\.js$/, loader: 'babel-loader'
-                }]
+                loaders: [// 此处使用rules会使得index.js中使用import或者@语法报错
+                    {test: /\.js$/, loader: 'babel-loader', exclude:'/node_modules/'}
+                ]
             }
         }), null, (err, stats) => { // 处理错误
             log(`Finished '${colors.cyan('scripts')}'`, stats.toString({

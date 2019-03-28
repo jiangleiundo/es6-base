@@ -51,14 +51,19 @@
 /* 1 */
 /***/ (function(module, exports) {
 
-	class Test {
-	    constructor(){
-	        this.hello = 'hello world 2'
-	    }
-	}
+	
+	// import 'babel-polyfill';
+	// import './class/demo16';
+	// import {a, test, Hello} from './class/demo17';
+	//
+	// console.log(a, test, Hello);
 
-	let test = new Test();
-	document.body.innerHTML = test.hello;
+	// import anyName from './class/demo17';
+	// console.log(anyName.Hello);
+	//
+	// let hello = new anyName.Hello;
+	// hello.say();
+	"use strict";
 
 /***/ })
 /******/ ]);

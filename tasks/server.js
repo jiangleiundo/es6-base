@@ -11,7 +11,7 @@ gulp.task('serve', (cb)=>{
     let server = liveserver.new(['--harmony','server/bin/www']); // --harmony 表示要在当前命令行下执行server/bin/www脚本
     server.start();
 
-    // 监听server下的public和views目录
+    // 监听server下的public和views目录下文件内容的变化
     gulp.watch(['server/public/**/*.js', 'server/public/**/*.css', 'server/views/**/*.ejs'], function(file){
         server.notify.apply(server, [file]) // 通知服务器文件发生了变化，然后服务器做响应处理
     });
